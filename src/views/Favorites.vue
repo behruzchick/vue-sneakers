@@ -1,7 +1,7 @@
 <script setup>
 import { inject } from "vue";
 import CardList from "../components/CardList.vue";
-import InfoBlock from "../components/InfoBlock.vue";
+import InfoBlock from "../components/ComponentInfoBlock.vue";
 
 const { favorites } = inject("cart");
 

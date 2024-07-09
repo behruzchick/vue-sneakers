@@ -55,7 +55,7 @@ const onClickHandler = () => {
 
       <router-link to="/favorites">
         <li
-          class="flex items-center cursor-pointer gap-3 text-bold text-xl text-gray-500 hover:text-black"
+          class="flex items-center cursor-pointer gap-3 text-gray-500 hover:text-black"
         >
           <img src="/heart.svg" alt="" />
           <b>Закладки</b>
@@ -64,19 +64,19 @@ const onClickHandler = () => {
 
       <router-link to="/orders">
         <li
-          class="flex items-center cursor-pointer gap-3 text-bold text-xl text-gray-500 hover:text-black"
+          class="flex items-center cursor-pointer gap-3 text-gray-500 hover:text-black"
         >
           <b>Мои заказы</b>
         </li>
       </router-link>
     </ul>
 
-    <ul class="max-lg:visible">
+    <ul class="hidden max-lg:block">
       <li>
         <img
           src="/hamburger.png"
           alt="hamburger"
-          class="w-11 h-11 active:bg-slate-300 transition"
+          class="w-11 h-11 transition active:bg-slate-300"
           @click="onClickOpenMenu"
         />
       </li>

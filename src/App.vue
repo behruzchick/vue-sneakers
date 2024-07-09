@@ -258,7 +258,7 @@ provide("cart", {
 </script>
 
 <template>
-<div class="w-4/5 m-auto bg-white rounded-xl shadow-xl mt-14">
+<div class="w-4/5 m-auto bg-white rounded-xl shadow-xl mt-14 max-md:w-full max-md:mt-0">
     <Drawer v-if="drawerOpen" :totalPrice="totalPrice" :vatPrice="vatPrice" :createOrder="createOrder"/>
     <Header @openDrawer="openDrawer" :totalPrice="totalPrice" :loading="loading"/>
     <router-view></router-view>

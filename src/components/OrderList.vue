@@ -16,6 +16,8 @@ const addToCart = inject("onCLickAddPlus");
 
 <template>
   <div v-for="order in props.items" class="grid grid-cols-4  gap-8 py-8 overflow-auto h-full custom-scrollbar max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1" v-auto-animate>
+    
+        <b>Сумма в итоге:  {{order.totalPrice}} рублей</b>
         <Card
           v-for="item in order.items"
           :id="item.id"

@@ -40,7 +40,7 @@ const {onChangeSelect} = inject('cart')
         </div>
       </div>
 
-      <div class="mt-10 h-[650px] overflow-hidden max-lg:overflow-visible max-md:h-screen">
+      <div class="mt-10 h-[370px] overflow-hidden max-lg:overflow-visible max-md:h-screen">
         <CardList :items="items" />
       </div>
     <!-- </div> -->
